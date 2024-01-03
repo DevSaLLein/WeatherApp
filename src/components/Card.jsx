@@ -52,8 +52,8 @@ const Card = ({ data }) => {
             </main>
 
             <foooter className="flex justify-center flex-col items-center">
-                <img src={current.codition.icon} alt="icon" className="block"/>
-                <span className="text-slate-700">{current.codition.text}</span>
+                <img src={current.condition.icon} alt="icon" className="block"/>
+                <span className="text-slate-700">{current.condition.text}</span>
             </foooter>
         </div>
     )

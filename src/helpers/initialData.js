@@ -7,9 +7,9 @@ const initialData = {
 
     current: {
         temp_c: '0',
-        codition: {
+        condition: {
             text: 'clear sky',
-            icon: '01n'
+            icon: '&01n'
         }       
     }
 }

@@ -1,14 +1,12 @@
 /* eslint-disable no-unused-vars */
-const KEY = '123';
-const url = 'https://api.weatherapi.com/v1/current.json';
+const KEY = 'baf2c084012240e7a9a154834232909';
+const url = 'http://api.weatherapi.com/v1/current.json';
 
 const fetchData = async (city) => {
-    const fetch = `${url}?key=${KEY}&q=${city}&aqi=no`;
-    const dataResponse = await fetch(fetch)
+    const req = `${url}?key=${KEY}&q=${city}&aqi=no`;
+    const fetchResponse = await fetch(req);
 
-    dataResponse.then((data) => {
-        return data.json;
-    })
+    return fetchResponse.json();
 }
 
 export default fetchData;

@@ -8,12 +8,16 @@ const App = () => {
   const [data, setData] = useState(initialData);
 
   const handleSubmit = (event) => {
+
     event.preventDefault();
+
     fetchData(city).then((response) => {
       setData(response);
+
+      console.log(response)
     })
   }
-
+  
   return (
     <div 
       className="
